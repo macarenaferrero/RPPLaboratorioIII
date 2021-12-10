@@ -147,6 +147,30 @@ thead {
   align-items: center;
 }
 
+@keyframes alert {
+  50%  {top: 50px; background: rgb(20, 132, 180);; width: 100px;}
+  100% {top: 200px; background: yellow; width: 300px;}
+}
+
+#divAlert{
+  width: 255px;
+  height: 255px;
+  background-color: rgb(20, 132, 180);
+  border-color: black;
+  border-radius: 360px;
+  color: white;
+  display: none;
+  z-index: 100;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  top: 40vh;
+    left: 40vw;  
+  animation-name: alert;
+  animation-duration: 3s;   
+}
+
 @media screen and (max-width: 900px) {
   .navegacion {
     flex-direction: column;

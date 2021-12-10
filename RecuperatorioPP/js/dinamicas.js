@@ -33,7 +33,17 @@ export const crearTabla = (data)=>{
             }
             else{            
            const td = document.createElement("td");
-           td.textContent = element[key];
+           switch (element[key]) {
+            case true:
+                td.textContent = "SI";                        
+                break;
+            case false:
+                td.textContent = "NO";                        
+                break;                
+            default:
+                td.textContent = element[key];
+                break;
+        }
            tr.appendChild(td);
         }
     }

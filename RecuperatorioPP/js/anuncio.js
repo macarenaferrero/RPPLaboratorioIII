@@ -12,10 +12,13 @@ class Anuncio {
 
 export class Anuncio_Auto extends Anuncio {
 
-    constructor(id, titulo, transaccion, descripcion, precio, puerta, km, potencia) {
+    constructor(id, titulo, transaccion, descripcion, precio, puerta, km, potencia, condicion, acondicionado, alarma) {
         super(id, titulo, transaccion, descripcion, precio);
         this.puerta = puerta;
         this.km = km;
         this.potencia = potencia;
+        this.condicion = condicion;
+        this.acondicionado = acondicionado;
+        this.alarma = alarma;
     }
 }

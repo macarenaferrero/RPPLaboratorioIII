@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="./js/script.js" type="module"></script>
-    <title>Bienes Raices</title>
+    <title>Concecionaria</title>
 </head>
 
 <body>
@@ -50,6 +50,21 @@
                 <h3>PRECIO</h3>
                 <input type="text" name="precio" step="0.01" placeholder="Precio" id="precio" autocomplete="off"
                     required>
+                <h3>CONDICION</h3>
+                <div>
+                    NUEVO <input type="radio" name="condicion" value="nuevo" id="nuevo" autocomplete="off" checked>
+                </div>
+                <div>
+                    USADO <input type="radio" name="condicion" value="usado" autocomplete="off" id="usado">
+                </div>
+                <h3>CARACTERÍSTICAS</h3>
+                <div>
+                    Con aire acondicionado<input type="checkbox" name="acondicionadoCheck" value="acondicionado" id="acondicionado" autocomplete="off" checked>
+                </div>
+                <div>
+                    Con alarma<input type="checkbox" name="alarmaCheck" value="alarma" autocomplete="off" id="alarma">
+                </div>
+                
                 <div>
                     <img src="./images/puerta.png.png" height="100%" width="35px" alt="puerta-autos">
                     <input type="number" name="puerta" id="puerta" placeholder="Puertas" autocomplete="off" required>
@@ -74,7 +89,9 @@
                 <input type="hidden" name="txtId">
             </div>
             <div id="spinner-container"></div>
-            <div id="divTabla"  ></div>
+            <div id="divTabla"></div>
+            <div id="divTablaIds"></div>
+            <div id="divAlert" onclick="display='none';"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>!
         </form>
     </main>
     <footer>
